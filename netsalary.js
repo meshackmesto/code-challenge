@@ -48,7 +48,7 @@ function calculateNetSalary(basicSalary, benefits) {
   const nssfDeduction = grossSalary * 0.06;
 
   // Calculate the net salary
-  const netSalary = grossSalary - nraTax - nhifDeduction - nssfDeduction;
+  const netSalary = grossSalary - kraTax - nhifDeduction - nssfDeduction;
 
   // Return the result
   return {
