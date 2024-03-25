@@ -1,6 +1,7 @@
 const prompt = require("prompt-sync")({ sigint: true });
 const name = prompt("Please enter your name: ");
-const basicSalary = prompt ("Please enter your basic salary: ")
+const basicSalary =Number (prompt ("Please enter your basic salary: "))
+const benefits =Number (prompt("Please enter yoiur benefits: "))
 
 
 function calculateNetSalary(basicSalary, benefits) {
@@ -53,8 +54,9 @@ function calculateNetSalary(basicSalary, benefits) {
   const nssfDeduction = grossSalary * 0.06;
 
   // Calculate the net salary
-  const netSalary = grossSalary - kraTax - nhifDeduction - nssfDeduction;
+  const netSalary = grossSalary + benefits - (kraTax - nhifDeduction - nssfDeduction);
+
 
   // Return the result
   return netSalary;
-  }console.log(`Hello ${name} , your netsalary is ${calculateNetSalary(basicSalary)}`);
+  }console.log(`Hello ${name} , your netsalary is ${calculateNetSalary(basicSalary ,benefits)}`);
