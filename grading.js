@@ -19,4 +19,4 @@ function gradeSystem(grade){
         return "E";
 }
 }
-console.log(`Hello, ${name}! Your grade is ${grade}.`);
+console.log(`Hello, ${name}! Your grade is ${gradeSystem(grade)}.`);
