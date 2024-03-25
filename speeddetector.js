@@ -6,14 +6,18 @@ const speed = prompt("Please enter your speed: ");
 
 //The below lines is the  code that will be executed if the user enters his/her details"
 function speeding(speed){
-    if (speed <70){
-    return "Ok";
-    } else { 
+    if (speed <=70){
+      return "Ok";
+    } 
+    else { 
         let demeritPoints = Math.floor((speed - 70) / 5);
-  if (demeritPoints > 12) {
-    console.log("License suspended");
-  } else {
-    console.log(`Points: ${demeritPoints}`);
-  }
+        if (demeritPoints > 12) {
+          console.log("License suspended" + demeritPoints);
+        } 
+        else {
+        return "You have " + demeritPoints ;
+        }   
     }
-}
+    }
+console.log(`Hello ${name}! Your driving speed is ${speed} and demerit points: ${speeding(speed)}`);
+
