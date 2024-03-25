@@ -1,9 +1,13 @@
 
 # CODE CHALLENGE
 
+# 25/03/2023
+
+# By MESHACK ORINA
+
 A brief description of what this project does and who it's for
 
-#1. GRADING SYSTEM
+# 1. GRADING SYSTEM
 
 First of all the user is reqiured to input here details so that the code can be executed.
 ```js
@@ -45,7 +49,7 @@ else if (grade < 40) {
 ```
 
 
-#2.SPEEDDETECTOR
+# 2.SPEEDDETECTOR
 
 First of all the user is reqiured to input here details so that the code can be executed.
 ```js
@@ -76,7 +80,7 @@ If the demerit points gunnered are above 12 the return statement will be the lic
     console.log(`Points: ${demeritPoints}`);
   }
   ```
-#3.NETSALARY
+# 3.NETSALARY
 First we add the basic salary to the benefit to get the gross salary.
 To get the kra tax, if the gross salary is less than 24000 the employeer is not taxed but if the employeers gross salary is between 24000 to 32330 and tax 10% is charged 
 ```js
@@ -100,4 +104,23 @@ const netSalary = grossSalary - kraTax - nhifDeduction - nssfDeduction;
 ```
 Then to obtain the netsalary the grossSalary added to the benefits then all the deductions(kratax,nhifDeduction andnssfDeduction).
 
+# INSTALLATION 
+create a repository
+copy the repository
+git innit
+git commit  -m "initial commit"
+git push
+
+
+# Technologies used
+
+Javascript
+
+## Support and contact details
+
+github.com/Meshackmesto
+
+ ### License
+The content of this site is licensed under the MIT license
+Copyright (c) 2018.
 
