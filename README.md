@@ -71,7 +71,16 @@ If the demerit points gunnered are above 12 the return statement will be the lic
   ```
 ##`NET SALARY`
 First we add the basic salary to the benefit to get the gross salary.
-To get the kra tax, if the gross salary is less than 24000 the employeer is not taxed but if the employeers gross salary is between 24000 to 32330 and tax 10% is charged from 24000 to get the taxamount taxed and then, we deduct the taxamount with the grosssalary. 
+To get the kra tax, if the gross salary is less than 24000 the employeer is not taxed but if the employeers gross salary is between 24000 to 32330 and tax 10% is charged 
+```js
+let kraTax = 0;
+    if (grossSalary <= 24000) {
+      kraTax = 0;
+    } else if (grossSalary > 24000 && grossSalary <= 32330) {
+      kraTax = 2400 * 0.1;
+    }
+```
+from 24000 to get the taxamount taxed and then, we deduct the taxamount with the grosssalary. 
 To  get the nhif deductions ,if the basic  salary is below 6000
 there is no nhif deduction but if the  basic salary exceeds 6000
 the nhifdeduction between 6000-8000 is 300,8000-12000 is 400,12000-16000 is 500 
